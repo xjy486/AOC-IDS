@@ -55,5 +55,5 @@ NB15 数据集：太大，没传上来（可以通过运行代码 preprocess.ipy
 感谢论文作者公开源代码，方便其他人在此基础上进行研究。
 
 其他参考的代码：
-https://github.com/Mamcose/NSL-KDD-Network-Intrusion-Detection/tree/master  
+https://github.com/Mamcose/NSL-KDD-Network-Intrusion-Detection/tree/master     
 https://github.com/thinline72/nsl-kdd
