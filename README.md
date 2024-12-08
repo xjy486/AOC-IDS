@@ -9,10 +9,23 @@ Xinchen Zhang, Running Zhao, Zhihan Jiang, Zhicong Sun, Yulong Ding, Edith C.H. 
 
 我在作者公开的代码基础上，补充了其他缺失的一部分实验，包括数据预处理等环节。
 
-**note:由于我无法完全保证与作者相同的实验环境，所以很多实验结果无法与论文中的结果保持一致。**
+# 实验环境
+linux系统  
 
-代码可能有许多有错误和疏忽的地方，还请多多指教。
+```
+lsb_release -a
 
+# No LSB modules are available.
+# Distributor ID: Ubuntu
+# Description:    Ubuntu 22.04.1 LTS
+# Release:        22.04
+# Codename:       jammy
+
+python --version
+# python3.12.0
+import torch print(__torch.version__)
+# 2.5.1+cu124
+```
 # 文件说明 😘
 
 ## 数据集 🤡
@@ -47,7 +60,7 @@ NB15 数据集：太大，没传上来（可以通过运行代码 preprocess.ipy
 
 7.inital.ipynb 初始训练  
 8.offline.ipynb 离线训练
-> 还有一些消融实验，因为不会写，没有做实验。🤡
+
 
 # Notice❗
 
@@ -55,6 +68,7 @@ NB15 数据集：太大，没传上来（可以通过运行代码 preprocess.ipy
 2. 代码可能有许多有错误和疏忽的地方，还请多多指教。
 3. 原作者提供的代码，有指定 5 次训练轮次，我这里没有指定，默认只训练一次。  
 4. 除了nsl-kdd.ipynb和preprocess.ipynb两个文件，使用了nsl-kdd数据集；其他的都只做了unsw_nb15数据集的实验，如果要用nsl-kdd数据集，去从nsl-kdd.ipynb里复制一些函数即可。
+5. 根据我的测试，即使是完全相同的代码，放在windows和linux上运行（没有控制两台机器使用相同的torch和python版本），会得到完全不同的结果，一个的所有评估得分均为1，另一个只能有0.8x的得分。
 # 感谢和参考 ❤️❤️❤️
 
 感谢论文作者公开源代码，方便其他人在此基础上进行研究。
