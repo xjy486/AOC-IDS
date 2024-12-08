@@ -61,6 +61,153 @@ NB15 数据集：太大，没传上来（可以通过运行代码 preprocess.ipy
 7.inital.ipynb 初始训练  
 8.offline.ipynb 离线训练
 
+## 实验结果
+在线学习的结果：
+
+<table style="margin: 0 auto; text-align: center;">
+  <tr>
+    <th></th>
+    <th>UNSW - NB15</th>
+    <th>NSL - KDD</th>
+  </tr>
+  <tr>
+    <th>Precison</th>
+    <td>92.56</td>
+    <td>78.11</td>
+  </tr>
+  <tr>
+    <th>Recall</th>
+    <td>88.83</td>
+    <td>99.99</td>
+  </tr>
+  <tr>
+    <th>Accuracy</th>
+    <td>89.92</td>
+    <td>84.04</td>
+  </tr>
+  <tr>
+    <th>F1</th>
+    <td>90.66</td>
+    <td>87.71</td>
+  </tr>
+</table>
+消融实验的结果：
+<table style="margin: 0 auto; text-align: center;">
+  <tr>
+    <td rowspan="2"></td>  
+    <th colspan="4">UNSW - NB15</th>
+    <th colspan="4">NSL - KDD</th>
+  </tr>
+  <tr>
+    <th>Precison</th>
+    <th>Recall</th>
+    <th>Accuracy</th>
+    <th>F1</th>
+    <th>Precison</th>
+    <th>Recall</th>
+    <th>Accuracy</th>
+    <th>F1</th>
+  </tr>
+  <tr>
+    <th>AOC-IDS</th>
+    <td>92.56</td>
+    <td>88.83</td>
+    <td>89.92</td>
+    <td>90.66</td>
+    <td>78.11</td>
+    <td>99.99</td>
+    <td>84.04</td>
+    <td>87.71</td>
+  </tr>
+  <tr>
+    <th>InfoNCE</th>
+    <td>93.39</td>
+    <td>84.54</td>
+    <td>88.20</td>
+    <td>88.75</td>
+    <td>76.97</td>
+    <td>99.92</td>
+    <td>82.94</td>
+    <td>86.96</td>
+  </tr>
+  <tr>
+    <th>w/o encoder</th>
+    <td>94.04</td>
+    <td>86.89</td>
+    <td>89.75</td>
+    <td>90.32</td>
+    <td>96.61</td>
+    <td>80.12</td>
+    <td>87.08</td>
+    <td>87.60</td
+  </tr>
+  <tr>
+    <th>w/o decoder</th>
+    <td>93.04</td>
+    <td>87.64</td>
+    <td>89.58</td>
+    <td>90.26</td>
+    <td>91.57</td>
+    <td>75.12</td>
+    <td>81.90</td>
+    <td>82.53</td>
+  </tr>
+</table>
+</table>
+
+online&offline&inital 的结果：
+
+<table style="margin: 0 auto; text-align: center;">
+  <tr>
+    <td rowspan="2"></td>  
+    <th colspan="4">UNSW - NB15</th>
+    <th colspan="4">NSL - KDD</th>
+  </tr>
+  <tr>
+    <th>Precison</th>
+    <th>Recall</th>
+    <th>Accuracy</th>
+    <th>F1</th>
+    <th>Precison</th>
+    <th>Recall</th>
+    <th>Accuracy</th>
+    <th>F1</th>
+  </tr>
+  <tr>
+    <th>online</th>
+    <td>92.56</td>
+    <td>88.83</td>
+    <td>89.92</td>
+    <td>90.66</td>
+    <td>78.11</td>
+    <td>99.99</td>
+    <td>84.04</td>
+    <td>87.71</td>
+  </tr>
+  <tr>
+    <th>offline</th>
+    <td>99.50</td>
+    <td>75.04</td>
+    <td>86.05</td>
+    <td>85.56</td>
+    <td>92.91</td>
+    <td>75.13</td>
+    <td>82.58</td>
+    <td>83.08</td>
+  </tr>
+  <tr>
+    <th>inital</th>
+    <td>99.21</td>
+    <td>68.41</td>
+    <td>82.30</td>
+    <td>80.98</td>
+    <td>93.39</td>
+    <td>74.02</td>
+    <td>82.23</td>
+    <td>82.58</td>
+  </tr>
+
+</table>
 
 # Notice❗
 
