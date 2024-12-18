@@ -68,12 +68,94 @@ NB15 数据集：太大，没传上来（可以通过运行代码 preprocess.ipy
 
 11.ml_zero_attack.py 用机器学习方法评估零日攻击检测
 
+<<<<<<< HEAD
 12.plot_zero_attack.py 画图，选用召回率作为数据
+=======
+12.plot_zero_attack.py 画图，选用召回率作为指标
+>>>>>>> 59e8f229e458991d7653c850f8084cf0a2334b91
 
 ## 实验结果 🤦‍♀️
 
 ### 综合对比 🤦‍♂️
 
+<<<<<<< HEAD
+=======
+<table style="margin: 0 auto; text-align: center;">
+  <tr>
+    <td rowspan="2"></td>  
+    <th colspan="4">UNSW - NB15</th>
+    <th colspan="4">NSL - KDD</th>
+  </tr>
+  <tr>
+    <th>Precison</th>
+    <th>Recall</th>
+    <th>Accuracy</th>
+    <th>F1</th>
+    <th>Precison</th>
+    <th>Recall</th>
+    <th>Accuracy</th>
+    <th>F1</th>
+  </tr>
+  <tr>
+    <th>AOC-IDS</th>
+    <td>92.56</td>
+    <td>88.83</td>
+    <td>89.92</td>
+    <td>90.66</td>
+    <td>78.11</td>
+    <td>99.99</td>
+    <td>84.04</td>
+    <td>87.71</td>
+  </tr>
+  <tr>
+    <th>RF</th>
+    <td>77.46</td>
+    <td>99.34</td>
+    <td>83.72</td>
+    <td>87.04</td>
+    <td>96.74</td>
+    <td>62.98</td>
+    <td>77.71</td>
+    <td>76.29</td>
+  </tr>
+  <tr>
+    <th>DTC</th>
+    <td>80.52</td>
+    <td>95.21</td>
+    <td>84.68</td>
+    <td>87.25</td>
+    <td>91.02</td>
+    <td>68.66</td>
+    <td>78.30</td>
+    <td>78.28</td>
+  </tr>
+  <tr>
+    <th>SVM</th>
+    <td>75.11</td>
+    <td>99.59</td>
+    <td>81.60</td>
+    <td>85.63</td>
+    <td>92.01</td>
+    <td>63.87</td>
+    <td>76.28</td>
+    <td>75.40</td>
+  </tr>
+  <tr>
+    <th>XGBoost</th>
+    <td>77.57</td>
+    <td>98.72</td>
+    <td>83.58</td>
+    <td>86.87</td>
+    <td>91.81</td>
+    <td>64.27</td>
+    <td>76.40</td>
+    <td>75.61</td>
+  </tr>
+</table>
+</table>
+
+### 消融实验 🤷‍♀️
+>>>>>>> 59e8f229e458991d7653c850f8084cf0a2334b91
 <table style="margin: 0 auto; text-align: center;">
   <tr>
     <td rowspan="2"></td>  
@@ -274,7 +356,11 @@ NB15 数据集：太大，没传上来（可以通过运行代码 preprocess.ipy
 1. 由于我无法保证与作者相同的实验环境，所以很多实验结果无法与论文中的结果保持一致。
 2. 代码可能有许多有错误和疏忽的地方，还请多多指教。
 3. 原作者提供的代码，有指定 5 次训练轮次，我这里没有指定，默认只训练一次。
+<<<<<<< HEAD
 4. 根据我的测试，即使是完全相同的代码，放在 windows 和 linux 上运行（没有控制两台机器使用相同的 torch 和 python 版本），会得到完全不同的结果，一个的所有评估得分均为 1，另一个只能有 0.8x 的得分。
+=======
+5. 根据我的测试，即使是完全相同的代码，放在 windows 和 linux 上运行（没有控制两台机器使用相同的 torch 和 python 版本），会得到完全不同的结果，一个的所有评估得分均为 1，另一个只能有 0.8x 的得分。
+>>>>>>> 59e8f229e458991d7653c850f8084cf0a2334b91
 
 # 感谢和参考 ❤️❤️❤️
 
